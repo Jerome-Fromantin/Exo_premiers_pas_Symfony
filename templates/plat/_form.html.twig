@@ -1,0 +1,15 @@
+{{ form_start(form) }}
+    <div class="formRow">
+        {{ form_label(form.nom, "Nom", {"label_attr": {"class": "formLabel"}}) }}
+        {{ form_widget(form.nom) }}
+    </div>
+    <div class="formRow">
+        {{ form_label(form.description, "Description", {"label_attr": {"class": "formLabel"}}) }}
+        {{ form_widget(form.description) }}
+    </div>
+    <div class="formRow">
+        {{ form_label(form.category, "Catégorie", {"label_attr": {"class": "formLabel"}}) }}
+        {{ form_widget(form.category) }}
+    </div>
+    <button class="btn">{{ button_label|default('Valider') }}</button>
+{{ form_end(form) }}
